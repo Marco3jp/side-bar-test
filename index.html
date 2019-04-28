@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>sample list</title>
+    <style>
+        a[target=_blank]:after {
+            content: '';
+            position: absolute;
+            width: 1em;
+            height: 1em;
+            background: center/ contain no-repeat url("samples/img/external-link-alt-solid.svg");
+            margin-left: 3px;
+        }
+
+        a[target=_blank] {
+            margin-right: calc(1em + 3px);
+        }
+    </style>
 </head>
 <body>
 <div>
-    <h1>サイドバーのサンプル</h1>
+    <h1>サイドバーに関するまとめ</h1>
+    <h2>サイドバーのサンプル</h2>
     <div>
         <ul>
             <li><a href="samples/base.html">base</a></li>
             <li><a href="samples/sample01.html">Sample01</a></li>
+        </ul>
+    </div>
+    <h2>サイドバーの参考</h2>
+    <div>
+        <ul>
+            <li>Google系サービス
+                <ul>
+                    <li>
+                        <a href="https://keep.google.com" target="_blank">Google Keep</a>
+                    </li>
+                    <li>
+                        <a href="https://calendar.google.com" target="_blank">Google Calendar</a>
+                    </li>
+                    <li>
+                        <a href="http://console.cloud.google.com" target="_blank">Google Cloud Platform(Console)</a>
+                    </li>
+                    <li>
+                        <a href="https://analytics.google.com" target="_blank">Google Analytics</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://tweetdeck.twitter.com" target="_blank">TweetDeck</a>
+            </li>
+            <li>
+                <a href="http://akveo.com/ngx-admin/pages/dashboard" target="_blank">ngx-admin(sample)</a> (<a
+                    href="https://akveo.github.io/ngx-admin" target="_blank">公式サイト</a>)
+            </li>
+            <li>
+                <a href="https://colorlib.com/polygon/gentelella" target="_blank">gentelella(sample)</a> (<a
+                    href="https://github.com/ColorlibHQ/gentelella" target="_blank">GitHub</a>)
+            </li>
+            <li>
+                <a href="https://coreui.io/demo/dark" target="_blank">CoreUI(sample)</a> (<a href="https://coreui.io"
+                                                                                             target="_blank">公式サイト</a>)
+            </li>
+            <li>
+                <a href="https://rt.goaccess.io" target="_blank">goaccess(sample)</a> (<a href="https://goaccess.io"
+                                                                                          target="_blank">公式サイト</a>)
+            </li>
+            <li>
+                <a href="https://preview.tabler.io" target="_blank">tabler(sample)</a> (<a href="https://tabler.io"
+                                                                                           target="_blank">公式サイト</a>)
+            </li>
+            <li>
+                <a href="http://themes.propeller.in/bootstrap3/html/propeller-admin"
+                   target="_blank">propeller(sample)</a> (<a href="https://propeller.in" target="_blank">公式サイト</a>)
+            </li>
         </ul>
     </div>
 </div>
