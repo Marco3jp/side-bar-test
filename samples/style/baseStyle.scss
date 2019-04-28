@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+a[target=_blank]:after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: center/ contain no-repeat url("../img/external-link-alt-solid.svg");
+  margin-left: 3px;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+$top-bar-height: 60px;
+$top-bar-vertical-padding: 5px;
+$top-bar-border-weight: 1px;
+$top-bar-inner-height: $top-bar-height - $top-bar-vertical-padding * 2 - $top-bar-border-weight;
+
+$side-bar-width: 250px;
+$top-bar-border-weight: 1px;
+
+#body-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  #top-bar {
+    height: $top-bar-height;
+    width: 100%;
+    padding: $top-bar-vertical-padding 0;
+
+    border-bottom: $top-bar-border-weight solid black;
+    display: flex;
+
+    #side-bar-toggler {
+      height: 100%;
+      width: $top-bar-inner-height;
+
+      background: center/ contain no-repeat url("../img/bars-solid.svg");
+    }
+
+    #tool-bar {
+      height: 100%;
+      flex-grow: 99;
+      display: flex;
+
+      .tool-bar-content {
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+
+      .tool-one, .tool-two, .tool-three, .tool-four, .tool-five {
+        width: 250px;
+        margin-left: 50px;
+      }
+
+      .tool-four {
+        width: 350px;
+      }
+
+      .tool-five {
+        margin-left: 150px;
+      }
+    }
+
+    #user-icon {
+      height: $top-bar-inner-height;
+      width: $top-bar-inner-height;
+      border: 3px solid black;
+      border-radius: 50%;
+    }
+  }
+
+  #main-wrapper {
+    height: calc(100vh - 60px);
+    display: flex;
+
+    #side-bar {
+      height: 100%;
+      width: $side-bar-width;
+      display: flex;
+      flex-direction: column;
+      border-right: $top-bar-border-weight solid black;
+
+      #side-bar-main-content {
+        flex-grow: 99;
+      }
+
+      .sidebar-content.normal-content {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid black;
+      }
+
+      .sidebar-content.mini-content {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid black;
+      }
+
+      .bottom-content {
+        border-top: 1px solid black;
+      }
+    }
+
+    #main-content {
+      overflow: auto;
+      flex-grow: 1;
+    }
+  }
+}

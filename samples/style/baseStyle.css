@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box; }
+
+a[target=_blank]:after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: center/contain no-repeat url("../img/external-link-alt-solid.svg");
+  margin-left: 3px; }
+
+.reset-margin {
+  margin: 0; }
+
+#body-wrapper {
+  width: 100vw;
+  height: 100vh; }
+  #body-wrapper #top-bar {
+    height: 60px;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+    display: flex; }
+    #body-wrapper #top-bar #side-bar-toggler {
+      height: 100%;
+      width: 49px;
+      background: center/contain no-repeat url("../img/bars-solid.svg"); }
+    #body-wrapper #top-bar #tool-bar {
+      height: 100%;
+      flex-grow: 99;
+      display: flex; }
+      #body-wrapper #top-bar #tool-bar .tool-bar-content {
+        border: 1px solid black;
+        border-radius: 3px; }
+      #body-wrapper #top-bar #tool-bar .tool-one, #body-wrapper #top-bar #tool-bar .tool-two, #body-wrapper #top-bar #tool-bar .tool-three, #body-wrapper #top-bar #tool-bar .tool-four, #body-wrapper #top-bar #tool-bar .tool-five {
+        width: 250px;
+        margin-left: 50px; }
+      #body-wrapper #top-bar #tool-bar .tool-four {
+        width: 350px; }
+      #body-wrapper #top-bar #tool-bar .tool-five {
+        margin-left: 150px; }
+    #body-wrapper #top-bar #user-icon {
+      height: 49px;
+      width: 49px;
+      border: 3px solid black;
+      border-radius: 50%; }
+  #body-wrapper #main-wrapper {
+    height: calc(100vh - 60px);
+    display: flex; }
+    #body-wrapper #main-wrapper #side-bar {
+      height: 100%;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid black; }
+      #body-wrapper #main-wrapper #side-bar #side-bar-main-content {
+        flex-grow: 99; }
+      #body-wrapper #main-wrapper #side-bar .sidebar-content.normal-content {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid black; }
+      #body-wrapper #main-wrapper #side-bar .sidebar-content.mini-content {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid black; }
+      #body-wrapper #main-wrapper #side-bar .bottom-content {
+        border-top: 1px solid black; }
+    #body-wrapper #main-wrapper #main-content {
+      overflow: auto;
+      flex-grow: 1; }
+
+/*# sourceMappingURL=baseStyle.css.map */
