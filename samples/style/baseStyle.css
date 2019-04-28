@@ -53,18 +53,36 @@ a[target=_blank]:after {
       display: flex;
       flex-direction: column;
       border-right: 1px solid black; }
+      #body-wrapper #main-wrapper #side-bar .sidebar-content-icon {
+        object-fit: contain; }
+      #body-wrapper #main-wrapper #side-bar .sidebar-content-title {
+        vertical-align: top; }
       #body-wrapper #main-wrapper #side-bar #side-bar-main-content {
         flex-grow: 99; }
       #body-wrapper #main-wrapper #side-bar .sidebar-content.normal-content {
         width: 100%;
         height: 60px;
+        line-height: 60px;
         border-bottom: 1px solid black; }
+        #body-wrapper #main-wrapper #side-bar .sidebar-content.normal-content .sidebar-content-icon {
+          width: 60px;
+          height: 60px;
+          padding: 6px; }
       #body-wrapper #main-wrapper #side-bar .sidebar-content.mini-content {
         width: 100%;
         height: 30px;
+        line-height: 30px;
         border-bottom: 1px solid black; }
+        #body-wrapper #main-wrapper #side-bar .sidebar-content.mini-content .sidebar-content-icon {
+          width: 30px;
+          height: 30px;
+          padding: 3px; }
       #body-wrapper #main-wrapper #side-bar .bottom-content {
         border-top: 1px solid black; }
+      #body-wrapper #main-wrapper #side-bar .multi-line-content {
+        line-height: unset !important; }
+      #body-wrapper #main-wrapper #side-bar #kinpri-hp-link {
+        text-align: center; }
     #body-wrapper #main-wrapper #main-content {
       overflow: auto;
       flex-grow: 1; }

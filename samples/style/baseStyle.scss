@@ -85,24 +85,56 @@ $top-bar-border-weight: 1px;
       flex-direction: column;
       border-right: $top-bar-border-weight solid black;
 
+      .sidebar-content-icon {
+        object-fit: contain;
+      }
+
+      .sidebar-content-title {
+        vertical-align: top;
+      }
+
       #side-bar-main-content {
         flex-grow: 99;
       }
 
       .sidebar-content.normal-content {
+        $height: 60px;
         width: 100%;
-        height: 60px;
+        height: $height;
+        line-height: $height;
         border-bottom: 1px solid black;
+
+        .sidebar-content-icon {
+          width: $height;
+          height: $height;
+          padding: $height * 0.1;
+        }
       }
 
       .sidebar-content.mini-content {
+        $height: 30px;
         width: 100%;
-        height: 30px;
+        height: $height;
+        line-height: $height;
         border-bottom: 1px solid black;
+
+        .sidebar-content-icon {
+          width: $height;
+          height: $height;
+          padding: $height * 0.1;
+        }
       }
 
       .bottom-content {
         border-top: 1px solid black;
+      }
+
+      .multi-line-content {
+        line-height: unset !important;
+      }
+
+      #kinpri-hp-link {
+        text-align: center;
       }
     }
 
