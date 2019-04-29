@@ -50,35 +50,7 @@
       $side-bar-icon-width: 60px;
       $side-bar-icon-padding: 5px;
       overflow: hidden;
-      transition: width .5s ease-in-out;
-
-      #alt-kinpri-hp-link, #alt-source-link {
-        display: none;
-      }
-
-      &.narrow-side-bar {
-        width: $side-bar-icon-width;
-
-        a[target=_blank]:after {
-          display: none;
-        }
-
-        #source-link, #kinpri-hp-link-inner-wrapper {
-          display: none;
-        }
-
-        #alt-kinpri-hp-link, #alt-source-link {
-          display: unset;
-          object-fit: contain;
-          width: 100%;
-
-          img {
-            height: 100%;
-            width: 100%;
-            padding: $side-bar-icon-padding;
-          }
-        }
-      }
+      transition: width .2s ease-in-out;
 
       .sidebar-content-icon {
       }
@@ -112,6 +84,35 @@
           }
         }
       }
+
+      #alt-kinpri-hp-link, #alt-source-link {
+        display: none;
+      }
+
+      &.narrow-side-bar {
+        width: $side-bar-icon-width;
+
+        a[target=_blank]:after {
+          display: none;
+        }
+
+        #source-link, #kinpri-hp-link-inner-wrapper {
+          display: none;
+        }
+
+        #alt-kinpri-hp-link, #alt-source-link {
+          display: unset;
+          object-fit: contain;
+          width: 100%;
+
+          img {
+            height: 100%;
+            width: 100%;
+            padding: $side-bar-icon-padding;
+          }
+        }
+      }
+
 
       .bottom-content {
       }
