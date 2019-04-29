@@ -1,3 +1,5 @@
+@import '_variable.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -14,14 +16,6 @@ a[target=_blank]:after {
 .reset-margin {
   margin: 0;
 }
-
-$top-bar-height: 60px;
-$top-bar-vertical-padding: 5px;
-$top-bar-border-weight: 1px;
-$top-bar-inner-height: $top-bar-height - $top-bar-vertical-padding * 2 - $top-bar-border-weight;
-
-$side-bar-width: 250px;
-$top-bar-border-weight: 1px;
 
 #body-wrapper {
   width: 100vw;
@@ -98,30 +92,28 @@ $top-bar-border-weight: 1px;
       }
 
       .sidebar-content.normal-content {
-        $height: 60px;
         width: 100%;
-        height: $height;
-        line-height: $height;
+        height: $side-bar-normal-content-height;
+        line-height: $side-bar-normal-content-height;
         border-bottom: 1px solid black;
 
         .sidebar-content-icon {
-          width: $height;
-          height: $height;
-          padding: $height * 0.1;
+          width: $side-bar-normal-content-height;
+          height: $side-bar-normal-content-height;
+          padding: $side-bar-normal-content-height * 0.1;
         }
       }
 
       .sidebar-content.mini-content {
-        $height: 30px;
         width: 100%;
-        height: $height;
-        line-height: $height;
+        height: $side-bar-mini-content-height;
+        line-height: $side-bar-mini-content-height;
         border-bottom: 1px solid black;
 
         .sidebar-content-icon {
-          width: $height;
-          height: $height;
-          padding: $height * 0.1;
+          width: $side-bar-mini-content-height;
+          height: $side-bar-mini-content-height;
+          padding: $side-bar-mini-content-height * 0.1;
         }
       }
 

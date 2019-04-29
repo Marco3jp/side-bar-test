@@ -1,0 +1,10 @@
+$top-bar-height: 60px;
+$top-bar-vertical-padding: 5px;
+$top-bar-border-weight: 1px;
+$top-bar-inner-height: $top-bar-height - $top-bar-vertical-padding * 2 - $top-bar-border-weight;
+
+$side-bar-width: 250px;
+$top-bar-border-weight: 1px;
+
+$side-bar-normal-content-height: 60px;
+$side-bar-mini-content-height: 30px;
