@@ -1,0 +1,126 @@
+@import '_variable.scss';
+
+#body-wrapper {
+
+  #top-bar {
+    $top-bar-padding-left: 5px;
+    padding-left: $top-bar-padding-left;
+
+    #side-bar-toggler {
+      padding: 10px;
+      background: center/ contain no-repeat url("../img/bars-solid.svg") content-box;
+      cursor: pointer;
+
+      &:hover:before {
+        content: '';
+        background-color: silver;
+        width: $top-bar-inner-height;
+        height: $top-bar-inner-height;
+        padding: 5px;
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        box-sizing: border-box;
+        top: $top-bar-vertical-padding;
+        left: $top-bar-padding-left;
+      }
+    }
+
+    #tool-bar {
+      .tool-bar-content {
+      }
+
+      .tool-one, .tool-two, .tool-three, .tool-four, .tool-five {
+      }
+
+      .tool-four {
+      }
+
+      .tool-five {
+      }
+    }
+
+    #user-icon {
+    }
+  }
+
+  #main-wrapper {
+
+    #side-bar {
+      $side-bar-icon-width: 60px;
+      $side-bar-icon-padding: 5px;
+      overflow: hidden;
+      transition: width .5s ease-in-out;
+
+      #alt-kinpri-hp-link, #alt-source-link {
+        display: none;
+      }
+
+      &.narrow-side-bar {
+        width: $side-bar-icon-width;
+
+        a[target=_blank]:after {
+          display: none;
+        }
+
+        #source-link, #kinpri-hp-link-inner-wrapper {
+          display: none;
+        }
+
+        #alt-kinpri-hp-link, #alt-source-link {
+          display: unset;
+          object-fit: contain;
+          width: 100%;
+
+          img {
+            height: 100%;
+            width: 100%;
+            padding: $side-bar-icon-padding;
+          }
+        }
+      }
+
+      .sidebar-content-icon {
+      }
+
+      .sidebar-content-title {
+        margin-left: 10px;
+      }
+
+      #side-bar-main-content {
+      }
+
+      .sidebar-content {
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(158, 158, 158, .5);
+        }
+
+        &.normal-content {
+          .sidebar-content-icon {
+            width: $side-bar-normal-content-height;
+            padding: $side-bar-icon-padding;
+          }
+        }
+
+        &.mini-content {
+          .sidebar-content-icon {
+            width: $side-bar-normal-content-height;
+            padding: $side-bar-icon-padding;
+          }
+        }
+      }
+
+      .bottom-content {
+      }
+
+      .multi-line-content {
+      }
+
+      #kinpri-hp-link {
+      }
+    }
+  }
+}

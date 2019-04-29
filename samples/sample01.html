@@ -5,6 +5,7 @@
     <title>Sample01</title>
     <link href="../normalize.css" type="text/css" rel="stylesheet">
     <link href="style/baseStyle.css" type="text/css" rel="stylesheet">
+    <link href="style/sample01.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div id="body-wrapper">
@@ -46,15 +47,22 @@
                 </div>
             </div>
             <div class="sidebar-content bottom-content mini-content">
-                <a href="https://github.com/Marco3jp/side-bar-test" target="_blank">本ページのソースコード</a>
+                <a href="https://github.com/Marco3jp/side-bar-test" target="_blank" id="source-link">本ページのソースコード</a>
+                <a href="https://github.com/Marco3jp/side-bar-test" target="_blank" id="alt-source-link"><img
+                        src="img/github-square-brands.svg" alt="ソースコードへのリンク"></a>
             </div>
             <div class="sidebar-content bottom-content normal-content multi-line-content" id="kinpri-hp-link">
-                <p class="reset-margin">KING OF PRISM -Shiny Seven Stars-</p>
-                <a href="https://kinpri.com/" target="_blank">https://kinpri.com/</a>
+                <div id="kinpri-hp-link-inner-wrapper">
+                    <p class="reset-margin">KING OF PRISM -Shiny Seven Stars-</p>
+                    <a href="https://kinpri.com/" target="_blank">https://kinpri.com/</a>
+                </div>
+                <a href="https://kinpri.com/" target="_blank" class="narrow-side-bar-icon" id="alt-kinpri-hp-link"><img
+                        src="img/info-solid.svg" alt="キンプリ情報"></a>
             </div>
         </nav>
         <main id="main-content">
             <div>
+                <p><strong>このサンプルで重要なのはサイドバーの挙動です。細かいところに違和感あったら、多分それは適当な実装のせいです。</strong></p>
                 <p>ここはメインコンテンツが来るところ</p>
                 <p>とりあえずサンプルとしてテンションマックスリラックス〜ってやつ置いておきます</p>
                 <iframe src="https://open.spotify.com/embed/track/7sWYrQm9CLDFWPOToSbx5Z" width="300" height="380"
@@ -71,6 +79,20 @@
                 <p>キラッとプリ☆チャンにはかわいい魔神とか、えっっっっっっっっっっっって衣装で踊り始める人たちがいるので面白いよ。</p>
             </div>
         </main>
+        <script>
+            let sidebarElm = document.querySelector("#side-bar");
+            let toggleButtonElm = document.querySelector("#side-bar-toggler");
+
+            function toggleSideBar() {
+                if (sidebarElm.classList.contains("narrow-side-bar")) {
+                    sidebarElm.classList.remove("narrow-side-bar");
+                } else {
+                    sidebarElm.classList.add("narrow-side-bar");
+                }
+            }
+
+            toggleButtonElm.addEventListener("click", toggleSideBar);
+        </script>
     </div>
 </div>
 </body>
